@@ -1,0 +1,89 @@
+body {
+
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat, no-repeat;
+}
+
+/* Typography section.  */
+.blue_text {
+  font-weight: 700;
+  color:hsl(229, 23%, 23%);
+}
+
+.grayblue_text {
+  color: hsl(227, 10%, 46%);
+}
+
+.gray_text {
+  color: hsl(0, 0%, 59%);
+}
+
+
+.stats_text {
+  font-size: 0.7rem;
+}
+
+/* Rest of CSS */
+
+.card {
+  background-image: url('./images/bg-pattern-card.svg');
+  width: 30%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px hsl(227, 10%, 46%);
+}
+
+.profile-pic {
+  border-radius: 100%;
+  border: 3px solid #fff;
+  margin: 5rem auto 1.8rem;
+}
+
+.location {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+
+.stats {
+  display: flex;
+  border-top: solid 0.5px hsl(0, 0%, 59%);
+  padding: 2rem;
+}
+
+.stats_box {
+  flex: 1;
+}
+
+.stats_number {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.stats_text {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
