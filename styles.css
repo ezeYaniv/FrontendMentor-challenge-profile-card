@@ -1,5 +1,6 @@
 body {
-
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
@@ -7,6 +8,20 @@ body {
   background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
   background-color: hsl(185, 75%, 39%);
   background-repeat: no-repeat, no-repeat;
+  background-position: -20% 60%, 110% -30%;
+  /* background-size: 50%; */
+}
+
+.container-wrap::before, .container-wrap::after {
+  
+}
+
+.bubble-top {
+  position: absolute;
+}
+.bubble-bottom {
+  float: right;
+  position: absolute;
 }
 
 /* Typography section.  */
@@ -26,34 +41,41 @@ body {
 
 .stats_text {
   font-size: 0.7rem;
+  letter-spacing: 2px;
 }
 
 /* Rest of CSS */
 
 .card {
   background-image: url('./images/bg-pattern-card.svg');
-  width: 30%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 360px;
   margin: auto;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 15px 50px hsl(227, 10%, 46%);
+  border-radius: 18px;
+  box-shadow: 0 4rem 4rem -2rem #14808a;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .profile-pic {
   border-radius: 100%;
-  border: 3px solid #fff;
-  margin: 5rem auto 1.8rem;
+  border: 5px solid #fff;
+  margin: 6rem auto 1.8rem;
 }
 
 .location {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 
 
 .stats {
   display: flex;
-  border-top: solid 0.5px hsl(0, 0%, 59%);
+  border-top: solid 0.2px rgba(150,150,150,0.3);
   padding: 2rem;
 }
 
